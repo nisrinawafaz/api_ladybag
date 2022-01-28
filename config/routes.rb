@@ -10,13 +10,12 @@ Rails.application.routes.draw do
   resources :users
   resources :line_items
   resources :carts
-  resources :sessions, only: [:create]
-  resources :registrations, only: [:create]
   resources :images, only: [:index, :show]
   resources :products, only: [:index, :show]
   resources :categories, only: [:index, :show]
+  resources :sessions, only: [:create]
+  resources :registrations, only: [:create]
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
-  get :price, to: "line_items#price"
   root to: "statics#home"
 end

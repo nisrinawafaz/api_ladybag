@@ -58,10 +58,6 @@ include CurrentCart
     end
   end
 
-  def price
-  
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_line_item

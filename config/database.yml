@@ -13,21 +13,21 @@ default: &default
   adapter: postgresql # Sebelumnya mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: xrrflgivsaevyl
-  password: b555ae8694e01c2c520b289e70afe36c53cfbc9c17ff8bbf0d5e0a746f4038ee
-  host: ec2-34-203-91-150.compute-1.amazonaws.com
+  username: gpisspjvnadaub
+  password: 108d7d8175f50f487fbbf606e475b2333c2c602f5b0896e842f0ddbcc5797d60
+  host: ec2-34-205-209-14.compute-1.amazonaws.com
   
 
 development:
   <<: *default
-  database: deaafvs1hcb6vg
+  database: d1v67p81q9ib6k
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: deaafvs1hcb6vg
+  database: d1v67p81q9ib6k
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -51,6 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: deaafvs1hcb6vg
-  username: xrrflgivsaevyl
+  database: d1v67p81q9ib6k
+  username: gpisspjvnadaub
   password: <%= ENV['API_LADYBAG_DATABASE_PASSWORD'] %>
