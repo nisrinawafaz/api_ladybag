@@ -9,7 +9,7 @@ class CreatePayments < ActiveRecord::Migration[6.1]
       t.references :district, foreign_key: true
       t.text :address
       t.string :phone
-      t.references :cart, foreign_key: true
+      t.integer :cart_id
       t.integer :subtotal
       t.integer :total
       t.references :status, foreign_key: true
